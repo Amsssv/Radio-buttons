@@ -1,0 +1,47 @@
+@import url(./normalize.css);
+
+
+.body {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 40px;
+	font-family: sans-serif;
+}
+
+.radio {
+	/* display: inline-flex; */
+	padding: 6px;
+	cursor: pointer;
+	border-radius: 50px;
+}
+
+.radio:not(:last-child) {
+	margin-right: 20px;
+}
+
+.radio:hover {
+	background: rgba(159, 159, 159, 0.1);
+}
+
+.radio__input {
+	vertical-align: middle;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	box-shadow: inset 0 0 0 1.5px #9F9F9F;
+	appearance: none;
+	transition: box-shadow 150ms cubic-bezier(.95, .15, .5, 1.25);
+	pointer-events: none;
+}
+
+.radio__input:checked {
+	box-shadow: inset 0 0 0 9px #6743ee;
+}
+
+.radio__label {
+	vertical-align: middle;
+	display: inline-block;
+	padding: 0 10px
+}
