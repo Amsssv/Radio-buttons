@@ -1,12 +1,17 @@
 import React from "react";
 import Buttons from "./JS/buttons";
+import Images from "./JS/images";
 
 
 
 function App() {
 
     return (
-        <Buttons />
+        <div> 
+            <Buttons  />
+            <Images />  
+        </div>
+
     );
 }
 
