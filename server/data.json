@@ -1,0 +1,17 @@
+[
+    {
+        "src": "images/ocean.jpg",
+        "alt": "ocean",
+        "id": "ocean"
+    },
+    {
+        "src": "images/mountain.jpg",
+        "alt": "mountain",
+        "id": "mountain"
+    },
+    {
+        "src": "images/desert.jpg",
+        "alt": "desert",
+        "id": "desert"
+    }
+]

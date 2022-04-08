@@ -5,40 +5,37 @@ const Buttons = () => {
 	const buttons = [
 		{
 			name: "First",
-			id: "first",
+			id: "ocean",
 		},
 		{
 			name: "Second",
-			id: "second",
+			id: "mountain",
 		},
 		{
 			name: "Third",
-			id: "third",
+			id: "desert",
 		},
 	]
 
 	const setClass = (e) => {
 		let images = document.querySelectorAll(".card__image");
-		let buttons = document.querySelectorAll('.radio__label');
-
-		const indexOf = element => Array.from(buttons).indexOf(element);
-
-		const buttonIndex = indexOf(e.currentTarget);
+		let buttons = document.querySelectorAll('.radio');
 
 		for (let i = 0; i < buttons.length; i++) {
-			images[i].classList.remove('card__image--active');
+			if (images[i].id === e.currentTarget.id) {
+				images[i].classList.add('card__image--active');
+			} else {
+				images[i].classList.remove('card__image--active');
+			}	
 		}
-		images[buttonIndex].classList.add('card__image--active');
-
-
 	}
 
 	return (
 		<div className="body" >
 			{buttons.map((button) =>
-				<label className="radio" key={button.id}  >
-					<input type="radio" id={button.id} className="radio__input" name="selector" />
-					<span className="radio__label" onClick={setClass}>{button.name}</span>
+				<label className="radio" key={button.id} id={button.id} onClick={setClass} >
+					<input type="radio"  className="radio__input" name="selector" />
+					<span className="radio__label" >{button.name}</span>
 				</label>
 			)}
 		</div>

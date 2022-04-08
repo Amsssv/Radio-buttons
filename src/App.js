@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Buttons from "./JS/buttons";
 import Images from "./JS/images";
 
 
 
 function App() {
+
 
     return (
         <div> 
