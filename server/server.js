@@ -6,7 +6,9 @@ const app = express();
 
 app.set('view engine', 'html');
 app.set('views', './');
-app.use(express.static("dist"));
+app.use(express.static(path.join(__dirname)))
+
+app.get('/', (req, res) => res.render('index'));
 
 app.get('/list', (req, res) => res.send(items));
 

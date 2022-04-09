@@ -2,16 +2,19 @@
     {
         "src": "images/ocean.jpg",
         "alt": "ocean",
-        "id": "ocean"
+        "id": "ocean",
+        "name": "First"
     },
     {
         "src": "images/mountain.jpg",
         "alt": "mountain",
-        "id": "mountain"
+        "id": "mountain",
+        "name": "Second"
     },
     {
         "src": "images/desert.jpg",
         "alt": "desert",
-        "id": "desert"
+        "id": "desert",
+        "name": "Third"
     }
 ]

@@ -54,15 +54,9 @@
 	align-items: center;
 }
 
-.card__block{
-	
-}
+.card__block {}
 
-.card__image{
-	height: 100px;
-	transition: all 0.3s
-}
-
-.card__image.card__image--active{
+.card__image {
 	height: 200px;
+	transition: all 0.3s
 }
